@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PropTypes from "prop-types";
+import PageWrapper from "../../../common/components/elements/PageWrapper";
 
 const ProjectCarousel = (props) => {
   const { data } = props;
@@ -17,21 +18,28 @@ const ProjectCarousel = (props) => {
     cssEase: "linear",
   };
   return (
-    <div className="mt-4">
-      <TitleSection>Latest Project</TitleSection>
-      <Slider {...settings} className="slider-container w-full h-48 mt-4">
-        {data.map((item, index) => (
-          <CardItem
-            key={index}
-            image={item["image"]}
-            title={item["title"]}
-            description={item["description"]}
-            destination={item["destination"]}
-          />
-        ))}
-      </Slider>
-      <hr className="my-4" />
-    </div>
+    <PageWrapper
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 100 }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="mt-4">
+        <TitleSection>Latest Project</TitleSection>
+        <Slider {...settings} className="slider-container w-full h-48 mt-4">
+          {data.map((item, index) => (
+            <CardItem
+              key={index}
+              image={item["image"]}
+              title={item["title"]}
+              description={item["description"]}
+              destination={item["destination"]}
+            />
+          ))}
+        </Slider>
+        <hr className="my-4" />
+      </div>
+    </PageWrapper>
   );
 };
 
@@ -64,4 +72,3 @@ CardItem.propTypes = {
 };
 
 export default ProjectCarousel;
-    

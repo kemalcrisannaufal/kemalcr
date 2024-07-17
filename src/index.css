@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 .card-container:hover .card-title {
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
+
+.stack-card:hover .stack-name {
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+  transition-duration: 10000ms;
+}
+
+.item-menu-box:hover .item-menu .icon-item-menu {
+  transform: rotate(30deg);
+  transition: transform 0.4s ease-in-out;
   
+
+}

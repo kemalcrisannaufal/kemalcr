@@ -8,7 +8,7 @@ const MainLayout = (props) => {
       <div className="hidden sm:block w-1/4 ">
         <SideBar></SideBar> 
       </div>
-      <div className="w-full sm:w-3/4">
+      <div className="w-full mb-20 sm:w-3/4">
         {children}</div>
     </div>
   );

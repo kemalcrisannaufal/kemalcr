@@ -8,14 +8,14 @@ const MenuItem = (props) => {
   return (
     <Link to={destination} className="w-full select-none">
       <div
-        className={`w-full flex justify-between items-center gap-3 p-2 pl-3 mb-2 border rounded-md transition-all duration-300 ${
+        className={`item-menu-box w-full flex justify-between items-center gap-3 p-2 pl-3 mb-2 border rounded-md transition-all duration-300 ${
           isActive && "bg-neutral-200"
         } hover:bg-neutral-200`}
         onClick={onClick}
       >
-        <div className="flex items-center gap-3">
-          <img src={icon} alt={name} className="w-5 h-5" />
-          <p className="text-lg text-neutral-600 font-normal tracking-wide">
+        <div className="item-menu w-full flex items-center gap-3">
+          <img src={icon} alt={name} className="icon-item-menu w-5 h-5" />
+          <p className="text-md text-neutral-600 font-normal tracking-wide">
             {name}
           </p>
         </div>

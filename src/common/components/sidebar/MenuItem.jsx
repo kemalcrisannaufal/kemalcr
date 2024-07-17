@@ -6,9 +6,9 @@ const MenuItem = (props) => {
   const { name, icon, destination, isActive, onClick } = props;
 
   return (
-    <Link to={destination} className="w-full">
+    <Link to={destination} className="w-full select-none">
       <div
-        className={`w-full flex justify-between items-center gap-3 p-2 pl-3 mb-2 border rounded-md ${
+        className={`w-full flex justify-between items-center gap-3 p-2 pl-3 mb-2 border rounded-md transition-all duration-300 ${
           isActive && "bg-neutral-200"
         } hover:bg-neutral-200`}
         onClick={onClick}

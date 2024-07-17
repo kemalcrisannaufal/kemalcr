@@ -1,11 +1,7 @@
-import SideBar from "../common/components/sidebar/Sidebar";
+import Home from "../modules/home/components";
 
-const Home = () => {
-  return (
-    <div>
-      <SideBar />
-    </div>
-  );
+const HomePage = () => {
+  return <Home />;
 };
 
-export default Home;
+export default HomePage;

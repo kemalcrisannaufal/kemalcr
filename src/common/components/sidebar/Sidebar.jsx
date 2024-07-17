@@ -1,10 +1,11 @@
 import ProfileInformation from "./ProfileInformation";
 import MenuItem from "./MenuItem";
-
+import PropTypes from "prop-types";
 import menu from "../../constant/menu";
 import { useState } from "react";
 
-const SideBar = () => {
+const SideBar = (props) => {
+  const { classname } = props;
   const [idxActive, setIdxActive] = useState(0);
 
   const handleMenuClick = (idx) => {
@@ -12,7 +13,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="max-w-xs p-5">
+    <div className={`max-w-64 p-5 ${classname}`}>
       <ProfileInformation
         image={"images/foto.jpg"}
         name={"Kemal Crisannaufal"}
@@ -30,6 +31,10 @@ const SideBar = () => {
       ))}
     </div>
   );
+};
+
+SideBar.propTypes = {
+  classname: PropTypes.string,
 };
 
 export default SideBar;

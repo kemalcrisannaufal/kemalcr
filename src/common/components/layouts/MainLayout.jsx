@@ -4,12 +4,11 @@ import SideBar from "../sidebar/Sidebar";
 const MainLayout = (props) => {
   const { children } = props;
   return (
-    <div className="mx-52 mt-10 flex">
-      <div className="hidden sm:block w-1/4 ">
-        <SideBar></SideBar> 
+    <div className="md:m-10 md:flex lg:mx-52">
+      <div className="w-full sticky top-0 z-10 md:block w-1/4 ">
+        <SideBar></SideBar>
       </div>
-      <div className="w-full mb-20 sm:w-3/4">
-        {children}</div>
+      <div className="w-full mb-20 md:w-3/4 px-10">{children}</div>
     </div>
   );
 };

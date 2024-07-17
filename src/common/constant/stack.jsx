@@ -8,6 +8,7 @@ import {
   SiReact,
   SiTailwindcss,
 } from "react-icons/si";
+import { SiPython, SiMysql } from "react-icons/si";
 
 const iconSize = 28;
 
@@ -20,17 +21,15 @@ const STACKS = {
     size: iconSize,
     className: "text-purple-500",
   }),
-
   Laravel: SiLaravel({ size: iconSize, className: "text-red-500" }),
-
+  Python: SiPython({ size: iconSize, className: "text-blue-500" }), // Tambahkan ikon Python di sini
   Firebase: SiFirebase({ size: iconSize, className: "text-yellow-500" }),
-  "AI": BsRobot({
+  AI: BsRobot({
     size: iconSize,
     className: "text-rose-500",
   }),
-
   CSS: SiCss3({ size: iconSize, className: "text-blue-300" }),
+  MySQL: SiMysql({ size: iconSize, className: "text-blue-600" }), // Tambahkan ikon MySQL di sini
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export default STACKS;

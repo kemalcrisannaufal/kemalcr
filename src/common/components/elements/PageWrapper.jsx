@@ -1,7 +1,13 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
-const PageWrapper = ({ children, initial, animate, exit, transition }) => {
+const PageWrapper = ({
+  children,
+  initial = { opacity: 0, y: 100 },
+  animate = { opacity: 1, y: 0 },
+  exit = { opacity: 0, y: -100 },
+  transition = { duration: 0.4 },
+}) => {
   return (
     <motion.div
       initial={initial}
@@ -20,13 +26,6 @@ PageWrapper.propTypes = {
   animate: PropTypes.object,
   exit: PropTypes.object,
   transition: PropTypes.object,
-};
-
-PageWrapper.defaultProps = {
-  initial: { opacity: 0, y: 100 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -100 },
-  transition: { duration: 0.4 },
 };
 
 export default PageWrapper;

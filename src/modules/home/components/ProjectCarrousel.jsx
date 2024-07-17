@@ -4,19 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PropTypes from "prop-types";
 import PageWrapper from "../../../common/components/elements/PageWrapper";
+import settingsCarouselLatestProject from "../../../common/constant/settingCarousel";
 
 const ProjectCarousel = (props) => {
   const { data } = props;
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    cssEase: "linear",
-  };
+
   return (
     <PageWrapper
       initial={{ opacity: 0, x: -100 }}
@@ -26,7 +18,10 @@ const ProjectCarousel = (props) => {
     >
       <div className="mt-4">
         <TitleSection>Latest Project</TitleSection>
-        <Slider {...settings} className="slider-container w-full h-48 mt-4">
+        <Slider
+          {...settingsCarouselLatestProject}
+          className="slider-container w-full h-48 mt-4"
+        >
           {data.map((item, index) => (
             <CardItem
               key={index}
@@ -51,12 +46,12 @@ const CardItem = (props) => {
   const { image, title, description, destination } = props;
   return (
     <a href={destination} className="block">
-      <div className="card-container h-48 p-0 rounded-lg overflow-hidden border mx-2 flex items-center justify-center relative hover:bg-gray-100 transition duration-300">
-        <img src={image} alt="" className="object-cover w-1/4 h-1/4" />
-        <p className="card-title absolute top-2 left-4 text-md text-neutral-800 font-medium">
+      <div className="card-container h-48 p-0 rounded-lg overflow-hidden border mx-2 flex items-center justify-center relative hover:bg-gray-100 transition duration-300 shadow-lg">
+        <img src={image} alt="" className="object-cover w-16 h-12 md:w-1/4 md:h-1/4" />
+        <p className="card-title text-md line-clamp-1 absolute top-2 left-4 text-neutral-800 font-medium">
           {title}
         </p>
-        <p className="px-5 absolute left-0 top-[70%] tracking-wider text-sm text-neutral-600 line-clamp-2">
+        <p className="text-xs px-5 absolute left-0 top-[70%] tracking-wider text-neutral-600 line-clamp-2 lg:text-sm">
           {description}
         </p>
       </div>

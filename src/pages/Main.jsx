@@ -4,6 +4,7 @@ import PageWrapper from "../common/components/elements/PageWrapper";
 import HomePage from "./Home";
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
+import ProjectPage from "./ProjectPage";
 
 import {
   BrowserRouter as Router,
@@ -32,6 +33,14 @@ const Main = () => {
             element={
               <PageWrapper>
                 <AboutPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/project"
+            element={
+              <PageWrapper>
+                <ProjectPage />
               </PageWrapper>
             }
           />

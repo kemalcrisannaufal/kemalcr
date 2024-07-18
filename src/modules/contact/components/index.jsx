@@ -1,5 +1,6 @@
 import Header from "../../../common/components/elements/Header";
 import ContactSection from "./ContactSection";
+import MessageSection from "./MessageSection";
 
 const Contact = () => {
   return (
@@ -10,8 +11,8 @@ const Contact = () => {
           "Feel free to get in touch and let's have a discussion about how we can work together."
         }
       />
-
       <ContactSection />
+      <MessageSection/>
     </div>
   );
 };

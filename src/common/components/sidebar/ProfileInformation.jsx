@@ -14,10 +14,14 @@ const ProfileInformation = (props) => {
       </div>
       <div>
         <div className="flex items-center mt-2">
-          <h1 className="text-md lg:text-xl text-neutral-800 font-medium">{name}</h1>
+          <h1 className="text-md lg:text-xl text-neutral-800 font-medium">
+            {name}
+          </h1>
           <FaCheckCircle size={20} color="green" className="ml-2" />
         </div>
-        <h2 className="text-sm lg:text-lg text-neutral-500 mb-3">@{nickname}</h2>
+        <h2 className="text-sm lg:text-lg text-neutral-500 mb-3">
+          @{nickname}
+        </h2>
       </div>
     </div>
   );

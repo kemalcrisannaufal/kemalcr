@@ -53,7 +53,7 @@ const SideBar = (props) => {
 
   return (
     <div
-      className={`flex justify-between items-center w-full bg-white md:max-w-64 md:block md:bg-white p-5 ${classname}`}
+      className={`flex justify-between items-center w-full bg-white md:max-w-64 md:block md:bg-white xl:fixed p-5 ${classname}`}
     >
       <ProfileInformation
         image={"images/foto.jpg"}
@@ -71,9 +71,9 @@ const SideBar = (props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: isToggleOpen ? 1 : 0 }}
         transition={{ duration: 0.5 }}
-        className={`absolute top-24 z-10 bg-white w-[90%] ${
+        className={`w-full absolute top-24 left-0 z-10 bg-white w-[90%] ${
           isToggleOpen ? "block" : "hidden"
-        } md:block md:relative md:top-0`}
+        }  md:sticky`}
       >
         {menu.map((item, index) => (
           <MenuItem

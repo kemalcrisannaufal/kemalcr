@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 const IntroText = (props) => {
   const { classname } = props;
   return (
-    <div className={`text-neutral-700 text-justify leading-7 ${classname}`}>
+    <div
+      className={`text-sm text-neutral-700 text-justify lg:text-md leading-7 ${classname}`}
+    >
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}

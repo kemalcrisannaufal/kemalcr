@@ -1,4 +1,4 @@
-import IntroText from "../../../common/constant/introAbout";
+import IntroText from "./IntroText";
 
 const Intro = () => {
   return <IntroText classname={"mt-5"} />;

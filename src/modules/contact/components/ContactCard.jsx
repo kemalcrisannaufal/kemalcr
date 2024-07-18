@@ -19,21 +19,20 @@ const ContactCard = (props) => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
-      className={`w-full border rounded-lg p-4 ${classname} opacity-95`}
+      className={`w-full h-full flex flex-col  border rounded-lg p-4 ${classname} opacity-95`}
     >
-      <h1 className="font-bold text-lg">{title}</h1>
-      <div className="w-full flex justify-between items-end mt-2">
-        <div>
-          <h2 className="text-sm tracking-wide">{description}</h2>
-          <a
-            href={destination}
-            className={`block w-max mt-3 rounded px-3 py-2 text-sm hover:opacity-70 hover:border ${accentColor}`}
-          >
-            <div className="flex gap-3 items-center font-medium">
-              Go To {name} <FaExternalLinkAlt />
-            </div>
-          </a>
-        </div>
+      <h1 className="font-bold lg:text-lg">{title}</h1>
+      <h2 className="text-xs lg:text-sm lg:tracking-wide">{description}</h2>
+      <div className="w-full flex flex-grow justify-between items-end mt-2">
+        <a
+          href={destination}
+          className={`block w-max mt-3 rounded px-3 py-2 text-sm hover:opacity-70 hover:border ${accentColor}`}
+        >
+          <div className="flex gap-3 items-center font-medium">
+            <span className="hidden xl:block">Go To</span>
+            {name} <FaExternalLinkAlt />
+          </div>
+        </a>
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}

@@ -1,4 +1,4 @@
-import { contactCards } from "../../../common/constant/contactCard";
+import contactCards from "../../../common/constant/contactCards";
 import ContactCard from "./ContactCard";
 
 const ContactSection = () => {

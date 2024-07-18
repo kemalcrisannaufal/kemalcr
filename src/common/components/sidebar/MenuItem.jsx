@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import RightArrowIcon from "../../../assets/right_arrow.svg";
+import { motion } from "framer-motion";
 
 const MenuItem = (props) => {
   const { name, icon, destination, isActive, onClick } = props;
@@ -21,9 +22,15 @@ const MenuItem = (props) => {
         </div>
 
         {isActive && (
-          <div>
-            <img src={RightArrowIcon} alt="->" className="w-6 h-6" />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+          >
+            <div>
+              <img src={RightArrowIcon} alt="->" className="w-6 h-6" />
+            </div>
+          </motion.div>
         )}
       </div>
     </Link>

@@ -1,14 +1,18 @@
-import Introduction from "../../home/components/Introduction";
-import ProjectCarousel from "../../home/components/ProjectCarrousel";
-import TechStack from "../../home/components/TechStack";
-import projectHomePage from "../../../common/constant/projectHome";
+import TabBar from "./TabBar";
+import Header from "../../../common/components/elements/Header";
 
 const About = () => {
   return (
-    <div>
-      <Introduction />
-      <ProjectCarousel data={projectHomePage} />
-      <TechStack />
+    <div >
+      <Header
+        title={"About"}
+        description={
+          "An insightful glimpse into who I am – because every detail adds depth to the canvas of life"
+        }
+      >
+        {" "}
+      </Header>
+      <TabBar></TabBar>
     </div>
   );
 };

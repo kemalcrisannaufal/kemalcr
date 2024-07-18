@@ -1,7 +1,7 @@
 import About from "../modules/about/components";
 
 const AboutPage = () => {
-  return <About />;
+  return <About/>;
 };
 
 export default AboutPage;

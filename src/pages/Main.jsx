@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import PageWrapper from "../common/components/elements/PageWrapper";
 import HomePage from "./Home";
 import AboutPage from "./AboutPage";
+import ContactPage from "./ContactPage";
 
 import {
   BrowserRouter as Router,
@@ -31,6 +32,14 @@ const Main = () => {
             element={
               <PageWrapper>
                 <AboutPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <PageWrapper>
+                <ContactPage />
               </PageWrapper>
             }
           />

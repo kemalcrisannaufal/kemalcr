@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const SideBar = (props) => {
   const { classname } = props;
@@ -19,6 +20,15 @@ const SideBar = (props) => {
   const handleToggleClick = () => {
     setToggleOpen(!isToggleOpen);
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const activeIndex = menu.findIndex(
+      (item) => item.destination === location.pathname
+    );
+    setIdxActive(activeIndex !== -1 ? activeIndex : 0);
+  }, [location]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 768px)");

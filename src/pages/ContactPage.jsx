@@ -1,6 +1,6 @@
 import Contact from "../modules/contact/components";
 
 const ContactPage = () => {
-    return (<Contact/>)
+  return <Contact />;
 };
 export default ContactPage;

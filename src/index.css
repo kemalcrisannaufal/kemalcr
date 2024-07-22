@@ -16,3 +16,7 @@
   transform: rotate(30deg);
   transition: transform 0.4s ease-in-out;
 }
+
+.project-card:hover .project-card-img-shadow {
+  display: flex;
+}

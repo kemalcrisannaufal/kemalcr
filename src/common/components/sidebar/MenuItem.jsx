@@ -15,8 +15,8 @@ const MenuItem = (props) => {
         onClick={onClick}
       >
         <div className="item-menu w-full flex items-center gap-3">
-          <img src={icon} alt={name} className="icon-item-menu w-5 h-5" />
-          <p className="text-md text-neutral-600 font-normal tracking-wide">
+          <img src={icon} alt={name} className="icon-item-menu w-4 h-4 sm:w-5 sm:h-5" />
+          <p className="text-xs sm:text-md lg:text-base text-neutral-600 font-normal tracking-wide">
             {name}
           </p>
         </div>

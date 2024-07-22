@@ -5,7 +5,7 @@ const IntroText = (props) => {
   const { classname } = props;
   return (
     <div
-      className={`text-sm text-neutral-700 text-justify lg:text-md leading-7 ${classname}`}
+      className={`text-xs sm:text-sm text-neutral-700 text-justify md:text-md lg:text-base leading-7 ${classname}`}
     >
       <motion.div
         initial={{ opacity: 0, x: -20 }}

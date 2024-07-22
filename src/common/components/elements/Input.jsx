@@ -8,7 +8,7 @@ const Input = (props) => {
       placeholder={placeholder}
       id={name}
       name={name}
-      className={`w-full border rounded-lg px-3 py-2  ${classname}`}
+      className={`w-full border rounded-lg px-3 py-2 text-xs md:text-md lg:text-base  ${classname}`}
     />
   );
 };

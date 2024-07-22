@@ -51,7 +51,7 @@ const CardItem = (props) => {
         <p className="card-title text-md line-clamp-1 absolute top-2 left-4 text-neutral-800 font-medium">
           {title}
         </p>
-        <p className="text-xs px-5 absolute left-0 top-[70%] tracking-wider text-neutral-600 line-clamp-2 lg:text-sm">
+        <p className="text-[10px] sm:text-xs px-5 absolute left-0 top-[70%] tracking-wider text-neutral-600 line-clamp-2 lg:text-sm">
           {description}
         </p>
       </div>

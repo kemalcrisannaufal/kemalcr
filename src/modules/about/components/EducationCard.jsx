@@ -15,12 +15,12 @@ const EducationCard = (props) => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.9 }}
-        className="w-24 h-24 overflow-hidden"
+        className="w-16 h-16 sm:w-24 sm:h-24 overflow-hidden"
       >
         <img src={logo} alt="" className="w-full h-full object-contain" />
       </motion.div>
       <div>
-        <h1 className="text-md lg:text-lg text-center text-neutral-700 font-semibold">
+        <h1 className="text-sm md:text-md lg:text-lg text-center text-neutral-700 font-semibold">
           {name}
         </h1>
         <hr className="my-2" />
@@ -45,7 +45,7 @@ EducationCard.propTypes = {
 const InformationText = (props) => {
   const { text } = props;
   return (
-    <div className="text-xs md:text-md lg:text-base flex items-center gap-2">
+    <div className="text-[10px] sm:text-sm md:text-md lg:text-base flex items-center gap-2">
       <FaCircle className="text-[5px]" />
       <p>{text}</p>
     </div>

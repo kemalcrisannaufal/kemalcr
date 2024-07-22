@@ -4,7 +4,7 @@ const TabMenu = (props) => {
   const { icon, label, isActive, onClick } = props;
   return (
     <div
-      className={`text-xs w-1/4 py-2 flex items-center justify-center gap-3 border cursor-pointer lg:text-base select-none ${
+      className={`text-[10px] sm:text-xs w-1/4 py-2 flex items-center justify-center gap-1 md:gap-3 border cursor-pointer lg:text-base select-none ${
         isActive ? "bg-neutral-500 text-white" : "bg-neutral-100"
       }`}
       onClick={onClick}

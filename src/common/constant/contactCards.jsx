@@ -10,7 +10,7 @@ const contactCards = [
     icon: <FaGithub className={iconClassname} />,
     classname: "text-white bg-slate-700",
     accentColor: "bg-slate-800",
-    destination: "/",
+    destination: "https://github.com/kemalcrisannaufal",
   },
   {
     title: "Connect with me",
@@ -19,7 +19,7 @@ const contactCards = [
     icon: <FaLinkedin className={iconClassname} />,
     classname: "text-white bg-blue-700",
     accentColor: "bg-blue-800",
-    destination: "/",
+    destination: "https://www.linkedin.com/in/kemalcrisannaufal/",
   },
   {
     title: "Follow me",
@@ -28,7 +28,7 @@ const contactCards = [
     icon: <FaInstagram className={iconClassname} />,
     classname: "text-white bg-pink-500",
     accentColor: "bg-pink-600",
-    destination: "/",
+    destination: "https://www.instagram.com/kemal_crisannaufal/",
   },
   {
     title: "Send me an email",
@@ -37,7 +37,7 @@ const contactCards = [
     icon: <FaEnvelope className={iconClassname} />,
     classname: "text-white bg-red-600",
     accentColor: "bg-red-700",
-    destination: "/",
+    destination: "mailto:kemalcrisannnaufal@gmail.com",
   },
 ];
 

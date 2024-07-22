@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Introduction = () => {
   return (
-    <div>
+    <>
       <p className="text-xl md:text-2xl text-neutral-600 lg:text-3xl font-medium lg:tracking-wide">
         Hi, I m Kemal Crisannaufal{" "}
         <span className="inline-block animate-wave">👋</span>
@@ -21,7 +21,7 @@ const Introduction = () => {
         </p>
       </div>
       <hr />
-    </div>
+    </>
   );
 };
 

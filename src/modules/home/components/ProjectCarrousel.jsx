@@ -25,10 +25,10 @@ const ProjectCarousel = (props) => {
           {data.map((item, index) => (
             <CardItem
               key={index}
-              image={item["image"]}
-              title={item["title"]}
-              description={item["description"]}
-              destination={item["destination"]}
+              image={"images/logo_kcr.png"}
+              title={item.title}
+              description={item.description}
+              destination={item.destination}
             />
           ))}
         </Slider>
@@ -43,11 +43,15 @@ ProjectCarousel.propTypes = {
 };
 
 const CardItem = (props) => {
-  const { image, title, description, destination } = props;
+  const { title, image, description, destination } = props;
   return (
     <a href={destination} className="block">
       <div className="card-container h-48 p-0 rounded-lg overflow-hidden border mx-2 flex items-center justify-center relative hover:bg-gray-100 transition duration-300 shadow-lg">
-        <img src={image} alt="" className="object-cover w-16 h-12 md:w-1/4 md:h-1/4" />
+        <img
+          src={image}
+          alt={title}
+          className="object-cover w-16 h-12 md:w-1/4 md:h-1/4"
+        />
         <p className="card-title text-md line-clamp-1 absolute top-2 left-4 text-neutral-800 font-medium">
           {title}
         </p>
@@ -60,8 +64,8 @@ const CardItem = (props) => {
 };
 
 CardItem.propTypes = {
-  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   destination: PropTypes.string.isRequired,
 };

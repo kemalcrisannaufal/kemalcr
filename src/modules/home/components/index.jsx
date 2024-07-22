@@ -1,15 +1,15 @@
 import Introduction from "./Introduction";
 import ProjectCarousel from "./ProjectCarrousel";
 import TechStack from "./TechStack";
-import projectHomePage from "../../../common/constant/projectHome";
+import projects from "../../../common/constant/projects";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Introduction />
-      <ProjectCarousel data={projectHomePage} />
+      <ProjectCarousel data={projects} />
       <TechStack />
-    </div>
+    </>
   );
 };
 

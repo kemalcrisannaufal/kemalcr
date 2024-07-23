@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
   const { destination, image, title, description } = props;
   return (
     <Link to={destination}>
-      <div className="border border-slate-300 rounded-lg mb-2 overflow-hidden relative project-card shadow shadow-lg">
+      <div className="border border-slate-300 rounded-lg mb-2 overflow-hidden relative project-card shadow shadow-lg hover:scale-105 transition duration-300">
         <div className="w-full h-40 overflow-hidden">
           <img src={image} alt={title} />
         </div>

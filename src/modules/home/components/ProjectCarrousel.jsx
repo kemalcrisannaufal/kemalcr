@@ -50,7 +50,7 @@ const CardItem = (props) => {
         <img
           src={image}
           alt={title}
-          className="object-cover w-16 h-12 md:w-1/4 md:h-1/4"
+          className="card-image object-cover w-16 h-12 md:w-1/4 md:h-1/4"
         />
         <p className="card-title text-md line-clamp-1 absolute top-2 left-4 text-neutral-800 font-medium">
           {title}

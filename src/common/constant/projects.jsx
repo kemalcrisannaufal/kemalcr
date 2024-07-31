@@ -1,5 +1,19 @@
 const projects = [
   {
+    image: "images/netflix-project.png",
+    title: "Netflix Landing Page [Clone]",
+    description:
+      "This project is a clone of the Netflix landing page, created to replicate the design using React Js",
+    destination: "https://kcr-netflix.vercel.app/",
+  },
+  {
+    image: "images/slack-project.png",
+    title: "Slack Landing Page [Clone]",
+    description:
+      "This project is a clone of the Slack landing page, created to replicate the design using React Js",
+    destination: "https://slack-coral.vercel.app/",
+  },
+  {
     image: "images/maenbal_project.png",
     title: "Maenbal",
     description:

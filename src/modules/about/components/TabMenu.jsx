@@ -5,12 +5,12 @@ const TabMenu = (props) => {
   return (
     <div
       className={`text-[10px] sm:text-xs w-1/4 py-2 flex items-center justify-center gap-1 md:gap-3 border cursor-pointer lg:text-base select-none ${
-        isActive ? "bg-neutral-500 text-white" : "bg-neutral-100"
+        isActive ? "bg-neutral-500 text-white dark:bg-neutral-100" : "bg-neutral-100 dark:bg-neutral-500"
       }`}
       onClick={onClick}
     >
       {icon}
-      <p>{label}</p>
+      <p className="dark:text-black">{label}</p>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Input from "../../../common/components/elements/Input";
 const MessageSection = () => {
   return (
     <div>
-      <h1 className="mb-3 text-md md:text-lg text-neutral-700 font-medium">
+      <h1 className="mb-3 text-md md:text-lg text-neutral-700 font-medium dark:text-white">
         Or Send Me a Message
       </h1>
       <form action="">

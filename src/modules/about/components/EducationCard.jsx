@@ -20,7 +20,7 @@ const EducationCard = (props) => {
         <img src={logo} alt="" className="w-full h-full object-contain" />
       </motion.div>
       <div>
-        <h1 className="text-sm md:text-md lg:text-lg text-center text-neutral-700 font-semibold">
+        <h1 className="text-sm md:text-md lg:text-lg text-center text-neutral-700 font-semibold dark:text-white">
           {name}
         </h1>
         <hr className="my-2" />
@@ -46,8 +46,8 @@ const InformationText = (props) => {
   const { text } = props;
   return (
     <div className="text-[10px] sm:text-sm md:text-md lg:text-base flex items-center gap-2">
-      <FaCircle className="text-[5px]" />
-      <p>{text}</p>
+      <FaCircle className="text-[5px] dark:text-white" />
+      <p className="dark:text-white">{text}</p>
     </div>
   );
 };

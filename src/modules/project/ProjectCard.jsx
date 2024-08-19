@@ -15,8 +15,12 @@ const ProjectCard = (props) => {
           <FaArrowRight />
         </div>
         <div className="p-3 pb-4 h-full">
-          <p className="text-lg font-medium text-neutral-700">{title}</p>
-          <p className="text-sm leading-7 text-neutral-600">{description}</p>
+          <p className="text-lg font-medium text-neutral-700 dark:text-white">
+            {title}
+          </p>
+          <p className="text-sm leading-7 text-neutral-600 dark:text-white">
+            {description}
+          </p>
         </div>
       </div>
     </Link>

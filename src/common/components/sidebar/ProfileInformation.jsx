@@ -14,7 +14,7 @@ const ProfileInformation = (props) => {
       </div>
       <div>
         <div className="flex items-center mt-2">
-          <h1 className="text-md lg:text-xl text-neutral-800 font-medium">
+          <h1 className="text-md lg:text-xl text-neutral-800 font-medium dark:text-white">
             {name}
           </h1>
           <FaCheckCircle size={20} color="green" className="ml-2" />

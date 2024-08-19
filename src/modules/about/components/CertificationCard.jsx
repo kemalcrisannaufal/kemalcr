@@ -11,8 +11,8 @@ const CertificationCard = (props) => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="text-neutral-500 text-[10px] sm:text-sm lg:text-sm">
-        <p className="text-neutral-600 text-xs md:text-md lg:text-lg font-medium">
+      <div className="text-neutral-500 text-[10px] sm:text-sm lg:text-sm dark:text-white">
+        <p className="text-neutral-600 text-xs md:text-md lg:text-lg font-medium dark:text-white">
           {title}
         </p>
         <p>{organizer}</p>

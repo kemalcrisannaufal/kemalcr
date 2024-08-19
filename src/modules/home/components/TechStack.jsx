@@ -10,7 +10,7 @@ const TechStack = () => {
         {Object.keys(STACKS).map((key, index) => (
           <motion.div
             key={key}
-            className="stack-card flex items-center p-2 border rounded-xl bg-gray-100 relative select-none"
+            className="stack-card flex items-center p-2 border rounded-xl bg-gray-100 relative select-none dark:bg-neutral-800"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}

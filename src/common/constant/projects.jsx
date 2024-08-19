@@ -1,5 +1,12 @@
 const projects = [
   {
+    image: "images/fakestore.png",
+    title: "Fakestore",
+    description:
+      "Built a fake online store using React.js and the FakeStore API, showcasing dynamic product listings  for practicing front-end development",
+    destination: "https://fakestore-two-psi.vercel.app/",
+  },
+  {
     image: "images/netflix-project.png",
     title: "Netflix Landing Page [Clone]",
     description:

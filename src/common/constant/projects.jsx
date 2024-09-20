@@ -1,5 +1,12 @@
 const projects = [
   {
+    image: "images/blog_apps.png",
+    title: "Blog Apps",
+    description:
+      "Built a blog apps using Next.js and Firebase, with authentication and favorites feature",
+    destination: "https://blog-apps-kcr.vercel.app/",
+  },
+  {
     image: "images/fakestore.png",
     title: "Fakestore",
     description:
